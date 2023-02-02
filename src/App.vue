@@ -1,14 +1,14 @@
 <template>
-	<Meridian />
+	<TileLayer />
 </template>
 
 <script>
-import Meridian from "./components/meridian.vue";
+import TileLayer from "./components/geotilelayer.vue";
 
 export default {
 	name: "App",
 	components: {
-		Meridian,
+		TileLayer,
 	},
 };
 </script>

@@ -1,20 +1,7 @@
-# meridian
-![meridian](./src/assets/meridianLine.png)
-## data sort
-```javascript
-trackData.sort(function (a, b) {
-    if (a.updated > b.updated) {
-        return 1;
-    }
-    if (a.updated < b.updated) {
-        return -1;
-    }
-    // a must be equal to b
-    return 0;
-});
-```
+# TileLayer
+![TileLayer](./src/assets/meridianLine.png)
 
-## meridian 180 issue
+## TileLayer
 ```javascript
 let coordinates = [];
 let firstLng = parseFloat(trackData[0].longitude)

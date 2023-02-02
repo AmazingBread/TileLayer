@@ -1,11 +1,3 @@
-# TileLayer
-![TileLayer](./src/assets/geotilelayer.png)
-
-## L.TileLayer.BetterWMS
-```
-add L.TileLayer.BetterWMS.js
-```
-```javascript
 /* eslint-disable */
 import axios from "axios";
 // import L from "./leaflet.vue";
@@ -146,31 +138,3 @@ L.tileLayer.betterWms = function (url, options) {
 	// export const betterWms = function (url, options) {
 	return new L.TileLayer.BetterWMS(url, options);
 };
-```
-
-## TileLayer
-```javascript
-
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
-import "./L.TileLayer.BetterWMS.js";
-
-let vesselAllLayer = L.tileLayer.betterWms(LayerUrl, {
-    layers: accessLayer, //custom  lvi_prm lvi_latest_prm
-    viewparams: 'token:5a33e87e3cb40480ce07d9bd6f0e8579880bbd6d40902f0afa73d8caface86b2',
-    SRS: 'EPSG:4326',
-    tileSize: 512,
-    styles: layerStyles.vessel,
-    format: 'image/png',
-    transparent: true,
-    minZoom: 2,
-    maxZoom: 15,
-    pane: wmsPane,
-})
-// .addTo(this.map)
-vesselAllLayer.addTo(this.map);
-
-vesselSelect(test){
-    alert(test.mmsi)
-},
-```

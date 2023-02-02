@@ -157,7 +157,7 @@ import "./L.TileLayer.BetterWMS.js";
 
 let vesselAllLayer = L.tileLayer.betterWms(LayerUrl, {
     layers: accessLayer, //custom  lvi_prm lvi_latest_prm
-    viewparams: 'token:5a33e87e3cb40480ce07d9bd6f0e8579880bbd6d40902f0afa73d8caface86b2',
+    viewparams: '(token)',
     SRS: 'EPSG:4326',
     tileSize: 512,
     styles: layerStyles.vessel,
